@@ -5,7 +5,7 @@ export const fetchCardData = () => {
   return async (dispatch) => {
     const fetchData = async () => {
       const response = await fetch(
-        "https://food-ordering-acb5d-default-rtdb.europe-west1.firebasedatabase.app/cart.json"
+        "Api.json"
       );
       if (!response.ok) {
         throw new Error("Could notfetch cart data!");
